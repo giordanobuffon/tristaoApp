@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -9,15 +9,22 @@
         android:id="@+id/txtVibracao"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tstSom"
+        android:layout_alignStart="@+id/tstSom"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="28dp"
         android:text="Vibração"
         android:textSize="27sp"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="80dp" />
 
     <Switch
-        android:id="@+id/switch1"
+        android:id="@+id/switchVibra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/switch3"
+        android:layout_alignStart="@+id/switch3"
+        android:layout_alignTop="@+id/txtVibracao"
         android:textOff="Off"
         android:textOn="On"
         tools:layout_editor_absoluteX="227dp"
@@ -27,6 +34,10 @@
         android:id="@+id/tstSom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/checkBox"
+        android:layout_alignRight="@+id/checkBox"
+        android:layout_below="@+id/txtVibracao"
+        android:layout_marginTop="32dp"
         android:text="Som"
         android:textSize="27sp"
         tools:layout_editor_absoluteX="16dp"
@@ -36,6 +47,10 @@
         android:id="@+id/switch2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignLeft="@+id/switchVibra"
+        android:layout_alignStart="@+id/switchVibra"
         android:textOff="Off"
         android:textOn="On"
         tools:layout_editor_absoluteX="227dp"
@@ -45,6 +60,9 @@
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tstSom"
         android:text="Som 1"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="289dp" />
@@ -53,6 +71,9 @@
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tstSom"
+        android:layout_alignRight="@+id/tstSom"
+        android:layout_below="@+id/checkBox"
         android:text="Som 2"
         tools:layout_editor_absoluteX="106dp"
         tools:layout_editor_absoluteY="288dp" />
@@ -61,6 +82,9 @@
         android:id="@+id/checkBox3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tstSom"
+        android:layout_alignRight="@+id/tstSom"
+        android:layout_below="@+id/checkBox2"
         android:text="Som 3"
         tools:layout_editor_absoluteX="196dp"
         tools:layout_editor_absoluteY="288dp" />
@@ -69,6 +93,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtVibracao"
+        android:layout_alignStart="@+id/txtVibracao"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="20dp"
         android:text="Paleta de cores"
         android:textSize="27sp"
         tools:layout_editor_absoluteX="16dp"
@@ -78,6 +106,11 @@
         android:id="@+id/switch3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tstSom"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_toRightOf="@+id/textView"
         tools:layout_editor_absoluteX="227dp"
         tools:layout_editor_absoluteY="146dp" />
 
@@ -92,4 +125,15 @@
         android:textSize="25sp"
         tools:layout_editor_absoluteX="4dp"
         tools:layout_editor_absoluteY="0dp" />
-</android.support.constraint.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnPronto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="42dp"
+        android:text="Pronto"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="368dp" />
+</RelativeLayout>

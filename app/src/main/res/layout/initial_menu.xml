@@ -22,8 +22,8 @@
         android:id="@+id/switchVibra"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/switch3"
-        android:layout_alignStart="@+id/switch3"
+        android:layout_alignLeft="@+id/switchSom"
+        android:layout_alignStart="@+id/switchSom"
         android:layout_alignTop="@+id/txtVibracao"
         android:textOff="Off"
         android:textOn="On"
@@ -44,7 +44,7 @@
         tools:layout_editor_absoluteY="208dp" />
 
     <Switch
-        android:id="@+id/switch2"
+        android:id="@+id/switchPaleta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView"
@@ -103,7 +103,7 @@
         tools:layout_editor_absoluteY="146dp" />
 
     <Switch
-        android:id="@+id/switch3"
+        android:id="@+id/switchSom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/tstSom"
